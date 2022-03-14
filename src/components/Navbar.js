@@ -1,5 +1,8 @@
 import React from 'react'
 import logo from '../logo.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 const Navbar = () => {
   return (
     <header className="header_wrapper">
@@ -10,7 +13,7 @@ const Navbar = () => {
                 </a>
                 <button className="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
-                    <i className="fas fa-stream navbar-toggler-icon"></i>
+                    <FontAwesomeIcon icon={faBars} />
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav menu-navbar-nav">
